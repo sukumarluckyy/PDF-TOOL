@@ -1,5 +1,5 @@
 {
-  "name": "pdf-tool-&-ai-assistant",
+  "name": "pdf-tool",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,10 +11,12 @@
   "dependencies": {
     "react-dom": "^19.2.4",
     "react": "^19.2.4",
-    "@google/genai": "^1.41.0",
     "lucide-react": "^0.564.0",
     "pdf-lib": "^1.17.1",
-    "uuid": "^13.0.0"
+    "uuid": "^13.0.0",
+    "jszip": "^3.10.1",
+    "pdfjs-dist": "3.11.174",
+    "@google/genai": "^1.41.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

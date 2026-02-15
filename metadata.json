@@ -1,5 +1,5 @@
 {
-  "name": "PDF Tool & AI Assistant",
-  "description": "A modern, minimalist tool to merge, arrange, and analyze PDF documents with Gemini AI integration.",
+  "name": "PDF Tool",
+  "description": "A modern, minimalist suite of PDF tools: Merge, Split, Compress, and Convert.",
   "requestFramePermissions": []
 }

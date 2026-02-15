@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PDF Tool & AI Assistant</title>
+    <title>PDF Tool</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
@@ -14,12 +14,8 @@
               sans: ['Inter', 'sans-serif'],
             },
             colors: {
-              primary: {
-                50: '#f0f9ff',
-                100: '#e0f2fe',
-                500: '#0ea5e9',
-                600: '#0284c7',
-                700: '#0369a1',
+              slate: {
+                850: '#1e293b',
               }
             }
           },
@@ -31,16 +27,23 @@
         font-family: 'Inter', sans-serif;
         background-color: #f8fafc;
       }
-      /* Custom scrollbar for webkit */
+      /* Custom scrollbar */
       ::-webkit-scrollbar {
-        width: 6px;
+        width: 8px;
+        height: 8px;
       }
       ::-webkit-scrollbar-track {
         background: transparent;
       }
       ::-webkit-scrollbar-thumb {
         background-color: #cbd5e1;
-        border-radius: 20px;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #94a3b8;
+      }
+      .tool-card:hover {
+        transform: translateY(-4px);
       }
     </style>
   <script type="importmap">
@@ -49,10 +52,12 @@
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
     "react/": "https://esm.sh/react@^19.2.4/",
     "react": "https://esm.sh/react@^19.2.4",
-    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
     "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
     "pdf-lib": "https://esm.sh/pdf-lib@^1.17.1",
-    "uuid": "https://esm.sh/uuid@^13.0.0"
+    "uuid": "https://esm.sh/uuid@^13.0.0",
+    "jszip": "https://esm.sh/jszip@^3.10.1",
+    "pdfjs-dist": "https://esm.sh/pdfjs-dist@3.11.174",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
   }
 }
 </script>
